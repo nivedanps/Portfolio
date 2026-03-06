@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   phone: "9740130224",
   linkedin: "https://www.linkedin.com/in/nivedanps",
   github: "https://github.com/nivedanps",
-  summary: "Building new blocks of boxes through  AI tools & Code",
+  summary: "Building new blocks of boxes through AI tools & a Code enthusiast",
   location: "Mysore, Karnataka, India",
   about: "Hi, I'm Nivedan P S. Currently pursuing my  Pre-final year Bachelor's in Computer Science student at Maharaja Institute of Technology, Mysuru. My passion lies in building software that solves real-world problems and exploring the limitless possibilities of AI tools.\n\nI started my coding journey exploring the basics, but quickly fell in love with Full Stack Development. The ability to bring ideas to life through code constantly drives me. Since then, I've been deep-diving into the React ecosystem, mastering modern web technologies, and building applications that make a difference."
 };
