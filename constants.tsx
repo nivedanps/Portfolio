@@ -5,10 +5,10 @@ import { Project, Education, SkillCategory } from './types';
 export const PERSONAL_INFO = {
   name: "NIVEDAN P S",
   title: "Software Engineering Student",
-  subtitle :"Prefinal year Student"
+  subtitle: "Prefinal year Student",
   email: "nivedanps1234@gmail.com",
   phone: "9740130224",
-  linkedin: "https://linkedin.com/in/nivedan-ps-b49513384",
+  linkedin: "https://www.linkedin.com/in/nivedanps",
   github: "https://github.com/nivedanps",
   summary: "Building new blocks of boxes through  AI tools & Code",
   location: "Mysore, Karnataka, India",
