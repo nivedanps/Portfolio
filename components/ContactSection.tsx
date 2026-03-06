@@ -2,7 +2,7 @@ import React from 'react';
 import { PERSONAL_INFO } from '../constants';
 import { Send, FileText, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 
-const ContactSection: React.FC<{ id: string }> = ({}) => {
+const ContactSection: React.FC<{ id: string }> = ({ id }) => {
   return (
     <section id={id} className="section-padding bg-slate-50 dark:bg-transparent transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 perspective-1000">
