@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
     title: "ZOO MANAGEMENT SYSTEM",
     date: "DEC 2025",
     description: "Built a user-friendly UI/UX design for managing records of animals and zookeepers. Includes separate portals for visitors and zoo administration.",
-    link: "https://github.com/nivedanps/zoomanager.git"
+    link: "https://github.com/nivedanps/zoomanager.git",
     tech: ["PHP", "UI/UX Design", "Database Management"]
   }
 ];
