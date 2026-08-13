@@ -5,14 +5,14 @@ import { Project, Education, SkillCategory } from './types';
 export const PERSONAL_INFO = {
   name: "NIVEDAN P S",
   title: "Software Engineering Student",
-  subtitle: "Prefinal year Student",
+  subtitle: "Final year Student",
   email: "nivedanps1234@gmail.com",
   phone: "9740130224",
   linkedin: "https://www.linkedin.com/in/nivedanps",
   github: "https://github.com/nivedanps",
   summary: "Building new blocks of boxes through AI tools & a Code enthusiast",
   location: "Mysore, Karnataka, India",
-  about: "Hi, I'm Nivedan P S. Currently pursuing my  Pre-final year Bachelor's in Computer Science student at Maharaja Institute of Technology, Mysuru. My passion lies in building software that solves real-world problems and exploring the limitless possibilities of AI tools.\n\nI started my coding journey exploring the basics, but quickly fell in love with Full Stack Development. The ability to bring ideas to life through code constantly drives me. Since then, I've been deep-diving into the React ecosystem, mastering modern web technologies, and building applications that make a difference."
+  about: "Hi, I'm Nivedan P S. Currently pursuing my  Final year Bachelor's in Computer Science student at Maharaja Institute of Technology, Mysuru. My passion lies in building software that solves real-world problems and exploring the limitless possibilities of AI tools.\n\nI started my coding journey exploring the basics, but quickly fell in love with Full Stack Development. The ability to bring ideas to life through code constantly drives me. Since then, I've been deep-diving into the React ecosystem, mastering modern web technologies, and building applications that make a difference."
 };
 
 export const ABOUT_STATS = [
@@ -53,8 +53,8 @@ export const EDUCATION_LIST: Education[] = [
   {
     institution: "Maharaja Institute of Technology",
     degree: "Bachelor of Engineering, Computer Science",
-    period: "2023 - 2027(Expected)",
-    grade: "CGPA: 8.43",
+    period: "2023 - 2027",
+    grade: "CGPA: 8.73",
     location: "Mysuru"
   },
   {
@@ -88,7 +88,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     category: "Soft Skills",
-    skills: ["Problem Solving", "Quick Learner", "Team Collaboration", "Communication"]
+    skills: ["Problem Solving", "Quick Learner", "Team Collaborator"]
   }
 ];
 
