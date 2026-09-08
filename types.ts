@@ -19,3 +19,15 @@ export interface SkillCategory {
   category: string;
   skills: string[];
 }
+
+export interface Course {
+  title: string;
+  year: string;
+  issuer?: string;
+  link?: string;
+}
+
+export interface Achievement {
+  title: string;
+  category: string;
+}

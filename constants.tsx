@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Project, Education, SkillCategory } from './types';
+import { Project, Education, SkillCategory, Course, Achievement } from './types';
 
 export const PERSONAL_INFO = {
   name: "NIVEDAN P S",
@@ -10,65 +9,71 @@ export const PERSONAL_INFO = {
   phone: "9740130224",
   linkedin: "https://www.linkedin.com/in/nivedanps",
   github: "https://github.com/nivedanps",
-  summary: "Building new blocks of boxes through AI tools & a Code enthusiast",
-  location: "Mysore, Karnataka, India",
-  about: "Hi, I'm Nivedan P S. Currently pursuing my  Final year Bachelor's in Computer Science student at Maharaja Institute of Technology, Mysuru. My passion lies in building software that solves real-world problems and exploring the limitless possibilities of AI tools.\n\nI started my coding journey exploring the basics, but quickly fell in love with Full Stack Development. The ability to bring ideas to life through code constantly drives me. Since then, I've been deep-diving into the React ecosystem, mastering modern web technologies, and building applications that make a difference."
+  summary: "Aspiring software engineering student in final year. Passionate coding enthusiast with strong knowledge of modern AI tools & software development.",
+  location: "Mysuru, Karnataka, India",
+  about: "Hi, I'm Nivedan P S. Currently pursuing my final year Bachelor's in Computer Science & Engineering at Maharaja Institute of Technology, Mysuru. My passion lies in building software that solves real-world problems and exploring the limitless possibilities of cutting-edge AI tools.\n\nI started my coding journey exploring the fundamentals and quickly developed a deep interest in Full-Stack Development and AI-driven systems. From building real-time multilingual autonomous agent systems to feedback portals and database management applications, I love bringing ideas to life through robust, scalable code."
 };
 
 export const ABOUT_STATS = [
   {
     label: "Education",
     value: "B.E. Computer Science",
-    subValue: "Maharaja Institute of Technology (2023-2027)"
+    subValue: "Maharaja Institute of Technology (2023-2027) | 8.73 CGPA"
   },
   {
     label: "Focus",
-    value: "Full-Stack Development",
-    subValue: "React, Node.js, AI Tools,"
+    value: "AI & Full-Stack Development",
+    subValue: "Python, Java, React, AI Tools"
   },
   {
     label: "Goal",
     value: "Software Engineer",
-    subValue: "Building scalable solutions"
+    subValue: "Building intelligent & scalable solutions"
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: "SMART FACULTY FEEDBACK PORTAL",
-    date: "JAN 2026",
-    description: "Developed a college website that gathers all the feedback under one portal. Implemented secure admin access and separate portals for faculty and admin.",
-    link: "https://github.com/nivedanps/project.git",
-    tech: ["React", "HTML", "PHP", "MySQL"]
+    title: "Voxsynth",
+    date: "FEB 2026",
+    description: "Built an Autonomous multiplayer agent system that translates text to audio in real time in multiple languages simultaneously.",
+    tech: ["Autonomous Agents", "Real-Time Audio", "NLP", "Python", "AI"]
   },
   {
-    title: "ZOO MANAGEMENT SYSTEM",
+    title: "SMART FACULTY FEEDBACK PORTAL",
+    date: "JAN 2026",
+    description: "Designed a Web Application to simplify feedbacks and reporting. Enhanced decision-making through organized data visualization and analytics.",
+    link: "https://github.com/nivedanps/project.git",
+    tech: ["React", "HTML", "PHP", "MySQL", "Data Visualization"]
+  },
+  {
+    title: "ZOO DATABASE MANAGEMENT SYSTEM",
     date: "DEC 2025",
-    description: "Built a user-friendly UI/UX design for managing records of animals and zookeepers. Includes separate portals for visitors and zoo administration.",
+    description: "Developed a Zoo Management System that simplifies animal records, feeding schedules, and staff management. A step towards smarter, tech-driven wildlife care and administration.",
     link: "https://github.com/nivedanps/zoomanager.git",
-    tech: ["PHP", "UI/UX Design", "Database Management"]
+    tech: ["PHP", "MySQL", "Database Management", "UI/UX Design"]
   }
 ];
 
 export const EDUCATION_LIST: Education[] = [
   {
-    institution: "Maharaja Institute of Technology",
+    institution: "Maharaja Institute of Technology, Mysuru",
     degree: "Bachelor of Engineering, Computer Science",
-    period: "2023 - 2027",
+    period: "2023 – 2027",
     grade: "CGPA: 8.73",
     location: "Mysuru"
   },
   {
-    institution: "Sadvidya Semi-Residential College",
-    degree: "PUC (12th Grade)",
-    period: "2022 - 2023",
+    institution: "Sadvidya Semi-Residential College, Mysuru",
+    degree: "Pre-University Board",
+    period: "2022 – 2023",
     grade: "84.16%",
     location: "Mysuru"
   },
   {
-    institution: "Bharatiya Vidya Bhavan",
-    degree: "SSLC (10th Grade)",
-    period: "2021",
+    institution: "Bharatiya Vidya Bhavan, Mysuru",
+    degree: "High School",
+    period: "2020 – 2021",
     grade: "91.20%",
     location: "Mysuru"
   }
@@ -76,23 +81,67 @@ export const EDUCATION_LIST: Education[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    category: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"]
+    category: "Programming Languages",
+    skills: ["Python", "C", "Java", "JavaScript"]
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "Express", "REST APIs", "MySQL", "PHP", "MongoDB", "Python", "Java"]
-  },
-  {
-    category: "Tools",
-    skills: ["Git", "GitHub", "VS Code", "Jupyter Notebook"]
+    category: "Technologies & Tools",
+    skills: ["MySQL", "Git & GitHub", "Jupyter Notebook", "VS Code", "Antigravity", "Web Hosting", "React.js", "Node.js"]
   },
   {
     category: "Soft Skills",
-    skills: ["Problem Solving", "Quick Learner", "Team Collaborator"]
+    skills: ["Mentoring", "Problem Solving", "Team Collaboration", "Communication"]
   }
 ];
 
+export const COURSES: Course[] = [
+  {
+    title: "Introduction to Generative AI",
+    year: "2026"
+  },
+  {
+    title: "Artificial Intelligence Fundamentals",
+    year: "2025"
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    year: "2026"
+  },
+  {
+    title: "Programming with JavaScript",
+    year: "2026"
+  },
+  {
+    title: "Certified in Java Language",
+    year: "2025",
+    issuer: "Acube Tech Skills, Mysore, India"
+  }
+];
 
+export const ACHIEVEMENTS: Achievement[] = [
+  {
+    title: "Innovostava 2026 (Runner)",
+    category: "Hackathons / Competitions"
+  },
+  {
+    title: "Hackverse 2025",
+    category: "Hackathons / Competitions"
+  },
+  {
+    title: "ARGHYA - Empowering Engineers with Next-Gen AI Tools",
+    category: "Workshops / Seminars"
+  },
+  {
+    title: "Be10x AI tools (Workshop)",
+    category: "Workshops / Seminars"
+  }
+];
 
-
+export const ADDITIONAL_INFO = {
+  languages: [
+    { name: "English", proficiency: "Professional" },
+    { name: "Kannada", proficiency: "Native" },
+    { name: "Hindi", proficiency: "Limited" }
+  ],
+  interests: ["Cricket", "Kabaddi", "Open Source Contributor"]
+};

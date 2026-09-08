@@ -36,9 +36,14 @@ const Hero: React.FC<{ id: string }> = ({ id }) => {
           </a>
           <a
             href="/resume.pdf"
-            download
-            className="px-8 py-3 border border-slate-800 dark:border-slate-900 bg-white dark:bg-slate-100 text-slate-900 dark:text-slate-900 rounded-lg font-semibold hover:bg-slate-50 dark:hover:bg-slate-200 transition-all transform hover:scale-105"
+            download="Nivedan_P_S_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 border border-slate-800 dark:border-slate-900 bg-white dark:bg-slate-100 text-slate-900 dark:text-slate-900 rounded-lg font-semibold hover:bg-slate-50 dark:hover:bg-slate-200 transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-sm"
           >
+            <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
             Download CV
           </a>
         </div>
