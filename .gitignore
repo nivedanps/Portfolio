@@ -1,0 +1,40 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Production build outputs
+dist
+dist-ssr
+*.local
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS & Editor artifacts
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX
+Thumbs.db
+ehthumbs.db
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Temporary & packaging artifacts
+*.tar.gz
+server/public
+vite.config.ts.*
