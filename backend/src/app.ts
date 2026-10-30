@@ -39,8 +39,9 @@ export function createApp(): Express {
   // Request logger for API calls
   app.use(requestLogger);
 
-  // Mount API endpoints
+  // Mount API endpoints under both /api and root for serverless and traditional routing compatibility
   app.use("/api", apiRoutes);
+  app.use(apiRoutes);
 
   // Centralized error handling
   app.use(errorHandler);

@@ -4,7 +4,8 @@
     "shared/**/*",
     "backend/src/**/*",
     "tests/**/*",
-    "scripts/**/*"
+    "scripts/**/*",
+    "api/**/*"
   ],
   "exclude": ["node_modules", "build", "dist"],
   "compilerOptions": {

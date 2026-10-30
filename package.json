@@ -12,7 +12,7 @@
     "build": "tsx scripts/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
-    "test": "tsx tests/email/email.test.ts && tsx tests/contact/contact_suite.test.ts",
+    "test": "tsx tests/email/email.test.ts && tsx tests/contact/contact_suite.test.ts && tsx tests/vercel/vercel_api.test.ts",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
