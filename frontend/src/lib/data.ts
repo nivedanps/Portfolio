@@ -383,7 +383,7 @@ export const technicalSkills: SkillCategory[] = [
     sysId: "SKILL_SET.01",
     category: "Languages",
     icon: Code2,
-    items: ["Java", "Python", "C", "JavaScript", "SQL"]
+    items: ["Java", "Python", "C", "JavaScript"]
   },
   {
     id: 2,
@@ -400,7 +400,6 @@ export const technicalSkills: SkillCategory[] = [
     items: [
       "Data Structures & Algorithms",
       "Object-Oriented Programming",
-      "Problem Solving",
       "Web Development"
     ]
   },
@@ -423,7 +422,7 @@ export const technicalSkills: SkillCategory[] = [
     sysId: "SKILL_SET.06",
     category: "Tools & Technologies",
     icon: Terminal,
-    items: ["Git", "GitHub", "VS Code", "Jupyter Notebook"]
+    items: ["Git", "GitHub", "VS Code", "Jupyter Notebook", "Docker"]
   }
 ];
 
