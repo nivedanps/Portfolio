@@ -42,8 +42,35 @@ async function runVercelApiSuite() {
     assert.equal(res2.status, 400, "Empty payload to /contact should return HTTP 400");
     console.log("✓ POST /contact returned HTTP 400 as expected");
 
-    // 3. Test Honeypot trap on /api/contact
-    console.log("Test 3: Testing honeypot bot trap...");
+    // 3. Test GET /api/contact (expected method handling: 405 Method Not Allowed, not a crash)
+    console.log("Test 3: Testing GET /api/contact method handling...");
+    const resGetContact = await fetch(`${baseUrl}/api/contact`);
+    assert.equal(resGetContact.status, 405, "GET /api/contact should return HTTP 405 Method Not Allowed");
+    const jsonGetContact = await resGetContact.json();
+    assert.equal(jsonGetContact.success, false, "GET /api/contact response should indicate failure");
+    console.log("✓ GET /api/contact returned HTTP 405 Method Not Allowed as expected");
+
+    // 4. Test POST /api/contact with valid mocked input
+    console.log("Test 4: Testing POST /api/contact with valid mocked input...");
+    const resValidContact = await fetch(`${baseUrl}/api/contact`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: "Test Visitor",
+        email: "visitor@example.com",
+        subject: "Collaboration Request",
+        message: "Hello! This is an automated test inquiry.",
+      }),
+    });
+    // In test environment, if SMTP fails or succeeds, it either returns 200 or 500 (not 400)
+    assert.ok(
+      resValidContact.status === 200 || resValidContact.status === 500,
+      `Valid contact should pass schema validation, returned: ${resValidContact.status}`
+    );
+    console.log("✓ POST /api/contact with valid input passed schema validation");
+
+    // 5. Test Honeypot trap on /api/contact
+    console.log("Test 5: Testing honeypot bot trap...");
     const res3 = await fetch(`${baseUrl}/api/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -60,8 +87,8 @@ async function runVercelApiSuite() {
     assert.equal(json3.success, true, "Honeypot response should indicate success to trap bot");
     console.log("✓ Honeypot correctly trapped spam bot with silent success response");
 
-    // 4. Test GET /api/github/status
-    console.log("Test 4: Testing GET /api/github/status endpoint...");
+    // 6. Test GET /api/github/status
+    console.log("Test 6: Testing GET /api/github/status endpoint...");
     const res4 = await fetch(`${baseUrl}/api/github/status`);
     assert.equal(res4.status, 200, "GitHub status should return HTTP 200");
     const json4 = await res4.json();
