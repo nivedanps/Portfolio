@@ -9,8 +9,8 @@ async function runTestSuite() {
   console.log("==================================================\n");
 
   // 1. Set up test environment variables
-  process.env.GMAIL_USER = "nivedanps1234@gmail.com";
-  process.env.GMAIL_APP_PASSWORD = "kmam kfsx qlpn sfic";
+  process.env.GMAIL_USER = "mock-user@gmail.com";
+  process.env.GMAIL_APP_PASSWORD = "mock-app-password-test";
   process.env.CONTACT_RECEIVER_EMAIL = "nivedanps1234@gmail.com";
   process.env.NODE_ENV = "test";
   process.env.TRUST_PROXY = "true";
@@ -326,8 +326,7 @@ async function runTestSuite() {
       JSON.stringify(dataFailure),
     ];
     for (const bodyStr of sampleBodies) {
-      assert(!bodyStr.includes("kmam"), "App password must not leak");
-      assert(!bodyStr.includes("qlpn"), "App password fragment must not leak");
+      assert(!bodyStr.includes("mock-app-password"), "App password must not leak");
       assert(
         !bodyStr.includes("GMAIL_APP_PASSWORD"),
         "Env var names must not leak"
